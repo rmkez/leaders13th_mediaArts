@@ -1,0 +1,22 @@
+function setup() {
+  createCanvas(500, 500);
+  
+  background(255);
+  noStroke();
+  rectMode (CENTER);
+  ellipseMode(CENTER);
+  
+  for(let i = 0;i < 30;i ++){
+  
+    let size = (i*20);
+    
+    fill(random(200),random(200),random(200),30);
+    
+    if(i % 2 == 0){
+    ellipse(width/2,height/2, random(size),random(size));
+    }
+    else{
+    rect(width/2,height/2, random(size),random(size));
+    }
+  }
+}
